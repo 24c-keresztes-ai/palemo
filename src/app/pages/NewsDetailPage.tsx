@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { useLanguage } from '../context/LanguageContext';
-import { ArrowLeft, Calendar, Share2 } from 'lucide-react';
+import { ArrowLeft, Calendar, Share2, CheckCircle } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export function NewsDetailPage() {
@@ -10,7 +10,7 @@ export function NewsDetailPage() {
   const navigate = useNavigate();
 
   // Find the news item by ID
-  const newsItem = t.news.items.find(item => item.id.toString() === id);
+  const newsItem = t.news.items.find((item: any) => item.id.toString() === id);
 
   if (!newsItem) {
     return (
@@ -95,51 +95,67 @@ export function NewsDetailPage() {
             {newsItem.excerpt}
           </p>
 
-          {/* Full article content - You can expand this with more content fields */}
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-700 leading-relaxed mb-6">
-              {newsItem.excerpt}
-            </p>
-            
-            <p className="text-gray-700 leading-relaxed mb-6">
-              This comprehensive initiative represents a significant step forward in our city's commitment to modernization and improved service delivery to all residents. Community leaders and officials have worked together to ensure this project meets the highest standards of quality and accessibility.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Key Highlights</h2>
-            <ul className="space-y-3 mb-8">
-              <li className="text-gray-700 leading-relaxed flex items-start">
-                <span className="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <span>Enhanced infrastructure and modern facilities designed for long-term sustainability</span>
-              </li>
-              <li className="text-gray-700 leading-relaxed flex items-start">
-                <span className="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <span>Improved accessibility features ensuring equal access for all community members</span>
-              </li>
-              <li className="text-gray-700 leading-relaxed flex items-start">
-                <span className="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <span>Integration of cutting-edge technology to streamline services and operations</span>
-              </li>
-              <li className="text-gray-700 leading-relaxed flex items-start">
-                <span className="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <span>Strong community engagement throughout the planning and implementation phases</span>
-              </li>
-            </ul>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Community Impact</h2>
-            <p className="text-gray-700 leading-relaxed mb-6">
-              The positive impact of this initiative is already being felt across our diverse neighborhoods. Residents have expressed appreciation for the thoughtful approach taken by city officials, and early feedback indicates strong community support for the project's goals and outcomes.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              As we continue to move forward, the city remains committed to transparent communication and active engagement with all stakeholders. Regular updates will be provided through our official channels, and community input remains a vital part of our ongoing efforts.
-            </p>
-
-            <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-xl mt-10">
-              <p className="text-gray-800 font-medium italic">
-                "This represents a new chapter in our city's development, one that prioritizes innovation, accessibility, and community well-being." - City Official
+          {/* Full article content with custom data */}
+          {newsItem.fullContent && (
+            <div className="prose prose-lg max-w-none">
+              {/* Intro paragraph */}
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg font-medium">
+                {newsItem.fullContent.intro}
               </p>
+              
+              {/* Body paragraph */}
+              <p className="text-gray-700 leading-relaxed mb-8">
+                {newsItem.fullContent.body}
+              </p>
+
+              {/* Key Highlights Section */}
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 my-10 border-2 border-orange-200">
+                <h2 className="text-2xl font-black text-gray-900 mb-6 flex items-center">
+                  <CheckCircle className="w-7 h-7 mr-3 text-orange-600" />
+                  Key Highlights
+                </h2>
+                <ul className="space-y-4">
+                  {newsItem.fullContent.highlights.map((highlight: string, index: number) => (
+                    <motion.li
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                      className="text-gray-700 leading-relaxed flex items-start"
+                    >
+                      <span className="inline-block w-2 h-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full mt-2 mr-4 flex-shrink-0"></span>
+                      <span className="font-medium">{highlight}</span>
+                    </motion.li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Community Impact Section */}
+              <h2 className="text-2xl font-black text-gray-900 mt-12 mb-4">Community Impact</h2>
+              <p className="text-gray-700 leading-relaxed mb-8">
+                {newsItem.fullContent.impact}
+              </p>
+
+              {/* Quote Section */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative bg-gradient-to-br from-orange-500 to-red-500 text-white p-8 rounded-2xl mt-12 shadow-xl"
+              >
+                <div className="absolute top-0 left-0 text-white/20 text-8xl font-serif leading-none -mt-4 ml-4">"</div>
+                <blockquote className="relative z-10">
+                  <p className="text-lg font-medium italic mb-4 leading-relaxed">
+                    {newsItem.fullContent.quote}
+                  </p>
+                  <footer className="text-orange-100 font-bold">
+                    — {newsItem.fullContent.author}
+                  </footer>
+                </blockquote>
+              </motion.div>
             </div>
-          </div>
+          )}
 
           {/* Related actions */}
           <div className="mt-12 pt-8 border-t border-gray-200">

@@ -9,6 +9,7 @@ interface LanguageContextType {
   t: typeof translations.EN;
 }
 
+// Language Context Provider for multi-language support
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {

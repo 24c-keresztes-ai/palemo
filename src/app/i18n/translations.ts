@@ -30,7 +30,21 @@ export const translations = {
           excerpt: "The historic city hall building has reopened its doors after a six-month renovation project aimed at modernizing facilities and improving accessibility.",
           date: "Mar 15, 2026",
           category: "Infrastructure",
-          image: "https://images.unsplash.com/photo-1710896875539-7e4702af0615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXR5JTIwaGFsbCUyMGJ1aWxkaW5nJTIwZGF5fGVufDF8fHx8MTc3NDMzOTMxNHww&ixlib=rb-4.1.0&q=80&w=1080"
+          image: "https://images.unsplash.com/photo-1710896875539-7e4702af0615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXR5JTIwaGFsbCUyMGJ1aWxkaW5nJTIwZGF5fGVufDF8fHx8MTc3NDMzOTMxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+          fullContent: {
+            intro: "After six months of comprehensive renovation work, Palermo's historic City Hall has officially reopened to the public. The €12 million project has transformed the 19th-century building into a modern, accessible hub for civic services while preserving its architectural heritage.",
+            body: "The renovation project focused on three main areas: structural improvements, technological upgrades, and enhanced accessibility. Engineers worked meticulously to reinforce the building's foundation and restore its ornate facades while implementing state-of-the-art climate control systems. New elevators, wheelchair ramps, and accessible restrooms ensure that all citizens can access municipal services with ease. The interior has been redesigned with an open-plan layout featuring natural lighting, energy-efficient LED systems, and modern workspaces for over 200 city employees.",
+            highlights: [
+              "Complete restoration of the historic façade and original architectural details",
+              "Installation of cutting-edge HVAC and energy management systems",
+              "Universal accessibility features including elevators and ramps",
+              "Modern digital service counters with multilingual support",
+              "Eco-friendly materials achieving LEED Gold certification"
+            ],
+            impact: "The reopening marks a significant milestone in Palermo's commitment to preserving its cultural heritage while embracing modernization. Citizens can now enjoy shorter wait times, improved service delivery, and a welcoming environment. The building is expected to reduce energy consumption by 40% compared to pre-renovation levels.",
+            quote: "This renovation represents our dedication to serving the community with excellence while honoring our city's rich history. Every detail was carefully considered to create a space that belongs to all citizens.",
+            author: "Mayor Giuseppe Russo"
+          }
         },
         {
           id: 2,
@@ -38,7 +52,21 @@ export const translations = {
           excerpt: "Join us this weekend for the community outdoor spring festival featuring local artisans, food trucks, and live music for all ages.",
           date: "Mar 12, 2026",
           category: "Community",
-          image: "https://images.unsplash.com/photo-1768776179834-93e6cafc6d97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBldmVudCUyMG91dGRvb3JzfGVufDF8fHx8MTc3NDMzOTMxNHww&ixlib=rb-4.1.0&q=80&w=1080"
+          image: "https://images.unsplash.com/photo-1768776179834-93e6cafc6d97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBldmVudCUyMG91dGRvb3JzfGVufDF8fHx8MTc3NDMzOTMxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+          fullContent: {
+            intro: "This Saturday and Sunday, Villa Giulia Park will come alive with Palermo's beloved Annual Spring Festival. Now in its 15th year, the festival celebrates the arrival of spring with two days of art, music, food, and family entertainment.",
+            body: "Over 80 local artisans will showcase their handcrafted goods, from traditional Sicilian ceramics to contemporary jewelry and artwork. Food lovers can explore 25 gourmet food trucks offering everything from arancini and cannoli to international street food. Three stages will host continuous entertainment, including traditional Sicilian folk music, jazz ensembles, rock bands, and children's theater performances. Special workshops throughout the weekend will teach pottery, painting, and traditional crafts to visitors of all ages.",
+            highlights: [
+              "80+ artisan vendors featuring unique handcrafted products",
+              "25 gourmet food trucks with diverse culinary offerings",
+              "Live performances on three stages throughout the weekend",
+              "Interactive workshops for children and adults",
+              "Free admission and family-friendly activities"
+            ],
+            impact: "The Spring Festival has become a cornerstone of Palermo's cultural calendar, attracting over 30,000 visitors annually. It provides local artisans and small businesses with valuable exposure while strengthening community bonds and celebrating Sicilian culture.",
+            quote: "This festival is a testament to the vibrant creativity and warm spirit of our community. It brings families together and showcases the incredible talent we have right here in Palermo.",
+            author: "Cultural Director Maria Santoro"
+          }
         },
         {
           id: 3,
@@ -46,7 +74,21 @@ export const translations = {
           excerpt: "The city has acquired 20 new zero-emission buses to improve public transportation reliability and reduce our carbon footprint.",
           date: "Mar 10, 2026",
           category: "Transport",
-          image: "https://images.unsplash.com/photo-1765034511020-fbf315b3134c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdWJsaWMlMjB0cmFuc2l0JTIwYnVzJTIwbW9kZXJufGVufDF8fHx8MTc3NDMzOTMxNHww&ixlib=rb-4.1.0&q=80&w=1080"
+          image: "https://images.unsplash.com/photo-1765034511020-fbf315b3134c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdWJsaWMlMjB0cmFuc2l0JTIwYnVzJTIwbW9kZXJufGVufDF8fHx8MTc3NDMzOTMxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+          fullContent: {
+            intro: "Palermo takes a major step toward sustainable transportation with the introduction of 20 brand-new electric buses. This €18 million investment represents the city's largest expansion of public transit in a decade and underscores our commitment to environmental responsibility.",
+            body: "The new fleet consists of state-of-the-art electric buses manufactured by Solaris, each equipped with advanced battery technology providing a range of 250 kilometers per charge. These buses feature climate control, USB charging ports at every seat, real-time GPS tracking displays, and low-floor accessibility for passengers with mobility challenges. Four new charging stations have been installed at strategic depot locations, powered partially by solar panels. The buses will serve high-traffic routes connecting residential neighborhoods to the city center, university campuses, and major employment hubs.",
+            highlights: [
+              "20 zero-emission electric buses with 250km range",
+              "Modern amenities including WiFi, USB charging, and air conditioning",
+              "Enhanced accessibility features for all passengers",
+              "Solar-powered charging infrastructure at depot locations",
+              "Projected reduction of 800 tons of CO2 emissions annually"
+            ],
+            impact: "This expansion will increase service frequency on key routes by 30%, reducing wait times and overcrowding. Environmental studies project the new fleet will eliminate approximately 800 tons of CO2 emissions per year while reducing noise pollution in residential areas.",
+            quote: "Sustainable public transit is not just about reducing emissions—it's about providing reliable, comfortable, and accessible transportation that improves quality of life for everyone in our city.",
+            author: "Transport Commissioner Luca Ferraro"
+          }
         },
         {
           id: 4,
