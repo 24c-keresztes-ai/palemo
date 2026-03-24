@@ -23,7 +23,7 @@ export function Navbar() {
           <div className="flex items-center">
             <NavLink to="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
               <div className="w-10 h-10 bg-[#F28C28] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CP</span>
+                <img src="https://www.scuolaterzagenerazione.it/wp-content/uploads/2018/11/palermo_logo.svg_.png" alt="logo"/>
               </div>
               <span className="font-bold text-2xl text-gray-900 tracking-tight hidden sm:block">
                 Comune<span className="text-[#F28C28]">Palermo</span>
