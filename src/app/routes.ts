@@ -7,6 +7,7 @@ import { HistoryPage } from "./pages/HistoryPage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { ServiceDetailsPage } from "./pages/ServiceDetailsPage";
 import { ContactPage } from "./pages/ContactPage";
+import { FootballPage } from "./pages/FootballPage";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: "services", Component: ServicesPage },
       { path: "services/:id", Component: ServiceDetailsPage },
       { path: "contact", Component: ContactPage },
+      { path: "football", Component: FootballPage },
     ],
   },
 ]);

@@ -13,6 +13,7 @@ export function Navbar() {
     { name: t.nav.news, path: '/news' },
     { name: t.nav.services, path: '/services' },
     { name: t.nav.history, path: '/history' },
+    { name: t.nav.football, path: '/football' },
   ];
 
   return (
@@ -22,8 +23,8 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <NavLink to="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-              <div className="w-10 h-10 bg-[#F28C28] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CP</span>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                <img src="https://www.scuolaterzagenerazione.it/wp-content/uploads/2018/11/palermo_logo.svg_.png" alt="logo"/>
               </div>
               <span className="font-bold text-2xl text-gray-900 tracking-tight hidden sm:block">
                 Comune<span className="text-[#F28C28]">Palermo</span>

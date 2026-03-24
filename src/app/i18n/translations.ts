@@ -7,7 +7,8 @@ export const translations = {
       news: "News",
       services: "Services",
       history: "History",
-      contacts: "Contacts"
+      contacts: "Contacts",
+      football: "Football"
     },
     hero: {
       update: "Update",
@@ -146,6 +147,48 @@ export const translations = {
         hours: "Office Hours"
       }
     },
+    football: {
+      title: "Palermo FC",
+      subtitle: "The Pride of Sicily",
+      founded: "Founded",
+      stadium: "Stadium",
+      capacity: "Capacity",
+      colors: "Colors",
+      league: "Current League",
+      about: {
+        title: "About the Club",
+        description: "Palermo Football Club, known for its iconic pink and black (rosanero) colors, has been a cornerstone of Sicilian football since 1900. The club has experienced numerous successes in Serie A and has been home to some of football's greatest talents."
+      },
+      stadiumInfo: {
+        title: "Stadio Renzo Barbera",
+        description: "The historic home of Palermo FC, Stadio Renzo Barbera has witnessed countless memorable moments since its opening in 1932. Located in the heart of Palermo, the stadium creates an electrifying atmosphere on match days."
+      },
+      achievements: {
+        title: "Major Achievements",
+        items: [
+          "Serie A: Multiple campaigns in Italy's top flight",
+          "Coppa Italia: Quarter-finals and semi-finals appearances",
+          "UEFA Cup: Historic European campaigns",
+          "Serie B Champions: Multiple promotions",
+          "Anglo-Italian Cup: Winners 1992-93"
+        ]
+      },
+      legends: {
+        title: "Club Legends",
+        players: [
+          { name: "Luca Toni", role: "Striker", years: "2003-2005", description: "Serie A top scorer, became one of Italy's greatest forwards" },
+          { name: "Edinson Cavani", role: "Forward", years: "2007-2010", description: "Rose to stardom in Palermo before joining Napoli and PSG" },
+          { name: "Paulo Dybala", role: "Forward", years: "2012-2015", description: "Started his European career in Palermo's pink jersey" },
+          { name: "Javier Pastore", role: "Midfielder", years: "2009-2011", description: "Brilliant playmaker who enchanted Barbera before PSG move" },
+          { name: "Amauri", role: "Striker", years: "2005-2007", description: "Prolific goalscorer in rosanero colors" }
+        ]
+      },
+      currentSeason: {
+        title: "Current Season",
+        league: "Serie B",
+        description: "Palermo FC is competing in Serie B, working towards promotion back to Italy's top division. The club is owned by City Football Group and continues its proud tradition."
+      }
+    },
     footer: {
       about: "Committed to providing transparent, efficient, and accessible services to all citizens and visitors.",
       quickLinks: "Quick Links",
@@ -163,7 +206,8 @@ export const translations = {
       news: "Hírek",
       services: "Szolgáltatások",
       history: "Történelem",
-      contacts: "Kapcsolat"
+      contacts: "Kapcsolat",
+      football: "Futball"
     },
     hero: {
       update: "Frissítés",
@@ -302,6 +346,48 @@ export const translations = {
         hours: "Nyitvatartás"
       }
     },
+    football: {
+      title: "Palermo FC",
+      subtitle: "Szicília Büszkesége",
+      founded: "Alapítva",
+      stadium: "Stadion",
+      capacity: "Befogadóképesség",
+      colors: "Színek",
+      league: "Jelenlegi Bajnokság",
+      about: {
+        title: "A Klubról",
+        description: "A Palermo Futball Klub, amely ikonikus rózsaszín és fekete (rosanero) színeiről ismert, 1900 óta a szicíliai futball sarokköve. A klub számos sikert ért el a Serie A-ban, és otthont adott a futball néhány legnagyobb tehetségének."
+      },
+      stadiumInfo: {
+        title: "Stadio Renzo Barbera",
+        description: "A Palermo FC történelmi otthona, a Stadio Renzo Barbera számtalan emlékezetes pillanatnak adott otthont 1932-es megnyitása óta. Palermo szívében található, és villamosító hangulatot teremt a meccsnap során."
+      },
+      achievements: {
+        title: "Főbb Eredmények",
+        items: [
+          "Serie A: Többszörös szereplés az olasz élvonalban",
+          "Coppa Italia: Negyeddöntős és elődöntős szereplések",
+          "UEFA Kupa: Történelmi európai kampányok",
+          "Serie B Bajnok: Többszörös feljutás",
+          "Anglo-Olasz Kupa: Győztes 1992-93"
+        ]
+      },
+      legends: {
+        title: "Klub Legendák",
+        players: [
+          { name: "Luca Toni", role: "Csatár", years: "2003-2005", description: "Serie A gólkirály, Olaszország egyik legnagyobb csatára lett" },
+          { name: "Edinson Cavani", role: "Támadó", years: "2007-2010", description: "Palermóban lett sztár, mielőtt a Napolihoz és a PSG-hez csatlakozott" },
+          { name: "Paulo Dybala", role: "Támadó", years: "2012-2015", description: "Európai karrierjét Palermo rózsaszín mezében kezdte" },
+          { name: "Javier Pastore", role: "Középpályás", years: "2009-2011", description: "Briliáns játékmester, aki elbűvölte a Barberát a PSG-átigazolás előtt" },
+          { name: "Amauri", role: "Csatár", years: "2005-2007", description: "Produktív gólszerző a rosanero színekben" }
+        ]
+      },
+      currentSeason: {
+        title: "Jelenlegi Szezon",
+        league: "Serie B",
+        description: "A Palermo FC a Serie B-ben versenyez, azon dolgozik, hogy visszajusson az olasz élvonalba. A klubot a City Football Group birtokolja, és folytatja büszke hagyományait."
+      }
+    },
     footer: {
       about: "Elkötelezettek vagyunk amellett, hogy átlátható, hatékony és hozzáférhető szolgáltatásokat nyújtsunk minden polgárnak és látogatónak.",
       quickLinks: "Gyorslinkek",
@@ -319,7 +405,8 @@ export const translations = {
       news: "Notizie",
       services: "Servizi",
       history: "Storia",
-      contacts: "Contatti"
+      contacts: "Contatti",
+      football: "Calcio"
     },
     hero: {
       update: "Aggiornamento",
@@ -456,6 +543,48 @@ export const translations = {
         phoneTitle: "Telefono",
         emailTitle: "Email",
         hours: "Orari di Apertura"
+      }
+    },
+    football: {
+      title: "Palermo FC",
+      subtitle: "Il Pride of Sicily",
+      founded: "Fondata",
+      stadium: "Stadio",
+      capacity: "Capacità",
+      colors: "Colori",
+      league: "Attuale Lega",
+      about: {
+        title: "Sul Club",
+        description: "Palermo Football Club, noto per i suoi iconeici colori rosa e nero (rosanero), è stato un pilastro del calcio siciliano dal 1900. Il club ha avuto numerose successi in Serie A e ha ospitato alcuni dei più grandi talenti del calcio."
+      },
+      stadiumInfo: {
+        title: "Stadio Renzo Barbera",
+        description: "Il tetro storico di Palermo FC, Stadio Renzo Barbera, ha testimoniato numerose memorabili occasioni dal suo apertura nel 1932. Situato nel cuore di Palermo, lo stadio crea un'atmosfera elettrizzante nei giorni di partita."
+      },
+      achievements: {
+        title: "Principali Realizzazioni",
+        items: [
+          "Serie A: Numerose campagne nella prima lega italiana",
+          "Coppa Italia: Apparizioni in semifinale e in finale",
+          "UEFA Cup: Campagne storiche in Europa",
+          "Campioni di Serie B: Numerose promozioni",
+          "Coppa Anglo-Italiana: Vincitori 1992-93"
+        ]
+      },
+      legends: {
+        title: "Leggende del Club",
+        players: [
+          { name: "Luca Toni", role: "Attaccante", years: "2003-2005", description: "Top scorer della Serie A, divenuto uno dei più grandi attaccanti italiani" },
+          { name: "Edinson Cavani", role: "Attaccante", years: "2007-2010", description: "Si è fatto stella a Palermo prima di trasferirsi a Napoli e al PSG" },
+          { name: "Paulo Dybala", role: "Attaccante", years: "2012-2015", description: "Ha iniziato la sua carriera europea con la maglia rosa di Palermo" },
+          { name: "Javier Pastore", role: "Centrocampista", years: "2009-2011", description: "Brillante giocatore creativo che ha incantato il Barbera prima del suo trasferimento al PSG" },
+          { name: "Amauri", role: "Attaccante", years: "2005-2007", description: "Produttore di gol nei colori rosanero" }
+        ]
+      },
+      currentSeason: {
+        title: "Stagione Corrente",
+        league: "Serie B",
+        description: "Palermo FC sta competendo in Serie B, lavorando per la promozione di ritorno alla prima divisione italiana. Il club è posseduto da City Football Group e continua la sua tradizione orgogliosa."
       }
     },
     footer: {
