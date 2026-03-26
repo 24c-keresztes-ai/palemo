@@ -86,15 +86,15 @@ export function Footer() {
                 <ul className="mt-6 space-y-4">
                   <li className="flex text-base text-red-200 items-start hover:text-white transition-colors">
                     <MapPin className="h-6 w-6 text-red-300 mr-3 flex-shrink-0 mt-0.5" />
-                    <span>City Hall, Main Square 1,<br />12345 City, Country</span>
+                    <span>Palermo</span>
                   </li>
                   <li className="flex text-base text-red-200 items-center hover:text-white transition-colors">
                     <Phone className="h-6 w-6 text-red-300 mr-3 flex-shrink-0" />
-                    <span>+1 (555) 123-4567</span>
+                    <span>+39 091 740 1111</span>
                   </li>
                   <li className="flex text-base text-red-200 items-center hover:text-white transition-colors">
                     <Mail className="h-6 w-6 text-red-300 mr-3 flex-shrink-0" />
-                    <span>info@cityportal.gov</span>
+                    <span>info@comune.palermo.it</span>
                   </li>
                 </ul>
               </motion.div>
